@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> -->
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header>
+        <!-- menu button appears when screen < 1024px -->
+        <div class="menu_btn" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+            <span>Menu</span>
+        </div>
+        <!-- left navigation bar -->
+        <nav class="navbar">
+            <!-- close button -->
+            <div class="nav_close" onclick="closeMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <!-- logo -->
+            <div class="navbar_logo">
+                <img src="./img/logo.jpg" alt="">
+                <p>Group Name</p>
+            </div>
+            <div class="divider"></div>
+            <!-- links -->
+            <ul class="navbar_links">
+                <li class="navbar_link active"><a href="#">Dashboard</a></li>
+                <li class="navbar_link"><a href="#">Products</a></li>
+                <li class="navbar_link"><a href="#">Website</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- content of the page -->
+    <div class="container">
+        <!-- options on top right corner like preview store, etc... -->
+        <div class="store_preview">
+            <a href="#" target="_blank">View your store <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+
+        <!-- put content of the page here -->
+
+    </div>
+</body>
+<script src="./js/dashboard.js"></script>
+<script src="https://kit.fontawesome.com/911bf8846c.js" crossorigin="anonymous"></script>
+
+</html>
