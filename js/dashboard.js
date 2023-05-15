@@ -17,10 +17,9 @@ function closeMenu() {
     document.body.removeAttribute("style");
 }
 
-
+//remove all inline css when browser width >= 1024px
 window.addEventListener('resize', function (event) {
     if (window.matchMedia("(min-width: 1024px)").matches) {
-        // Viewport is less or equal to 700 pixels wide
         closeMenu();
     }
 }, true);
